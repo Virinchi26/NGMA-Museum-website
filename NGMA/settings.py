@@ -167,6 +167,6 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
 
-razorpay_id = 'rzp_test_IWjxXtgSUVEyd8'
-razorpay_account_id = '7FW1UWvjbhyaZBmRGCCFBo8o'
+razorpay_id = os.environ.get('RAZORPAY_ID')
+razorpay_account_id = os.environ.get('RAZORPAY_ACCOUNT_ID')
  
